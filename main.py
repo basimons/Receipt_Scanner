@@ -8,11 +8,13 @@ from extractor import Extractor
 pytes.pytesseract.tesseract_cmd = "C:\\Users\\Bram\\miniconda3\\Library\\bin\\tesseract.exe"
 
 # Read image from which text needs to be extracted
-img = cv.imread("Test_Image.jpeg")
+img = cv.imread("Test_Image3.jpeg")
 
 ex = Extractor(img)
 
 ex.preprocess()
+
+ex.process()
 
 ex.show()
 
